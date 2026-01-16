@@ -1,25 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #f5f5dc;
-
+    color: #f5f5dc;
 }
 
-h1{
-  color: #1d4302;
-  text-align: center;
+.page-header{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1D4032;
+    color: #f5f5dc;
 }
 
-p{
-    margin: 20px 150px;
-    padding-left: 50px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    font-size: larger;
-    background-color: #794432;
+.page-header h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-header p{
+    font-size: 1.2rem;
+}
+
+.product-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.product-card{
+    background-color: #a1650a;
     border-radius: 5px;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition: transform 0.36 ease;
+    width: 360px;
+
 }
 
-.productImage{
-    padding-left: 30px;
-    margin-left: 150px;
-    max-width: 100%;
+.product-card h2{
+    color: #1D4032;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-card p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper img{
+    width: 100%;
+    max-width: 300px;
+    height: 260px;
+    object-fit:cover;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.product-card:hover{
+    transform: translateY(-10px);
+}
+
+.price{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color:#1D4032;
+    font-size: 1.5rem;
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.order-btn{
+    background-color: #1D4032;
+    color: #f5f5dc;
+    border:none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: transform 0.2s, background-color 0.2s;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+}
+
+.order-btn:hover{
+    background-color: #2a5c48;
+    transform: scale(1.05);
 }
