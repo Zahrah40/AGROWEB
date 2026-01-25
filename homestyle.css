@@ -27,7 +27,7 @@ body{
 
 .nav-links{
     display: flex;
-    gap: 50px;
+    gap: 30px;
     
 }
 
@@ -35,7 +35,7 @@ body{
     color: #f5f5dc ;
     text-decoration: none;
     margin: 0 3px;
-    font-size: larger;
+    font-size: 1.2rem;
     
 }
 
@@ -69,27 +69,18 @@ body{
 }
 
 .about-column-image{ /*make the image bigger*/
-    padding: 0px, 30px;
-    width: 30%;
+    padding: 0 30px;
+    width: 40%;
     margin-top: 0;
-    padding-top: 0x;
-    height: 200%;
+    padding-top: 0;
 }
 
 .about-column-image img{
-    width: 250%;
+    width: 100%;
     height: auto;
     display: block;
-    height: 500%;
 }
 
-footer{
-    background: #794432;
-    color: #f5f5dc;
-    padding: 10px;
-    text-align: center;
-    margin-top: 40px;
-}
 
 
 

@@ -5,13 +5,13 @@
 }
 
 body{
-    background-color: #f5f5dc;
+    background-color: #d3dbb4;
     color: #f5f5dc;
 }
 
 .page-header{
     text-align: center;
-    padding: 50px 20px;
+    padding: 30px 20px;
     background-color: #1D4032;
     color: #f5f5dc;
 }
@@ -31,15 +31,15 @@ body{
     padding: 40px 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 25px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex: 1;
 }
 
 .product-card{
     background-color: #f5f5dc;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 20px;
     text-align: justify;
     box-shadow: 0 6px 18px rgba(0,0,0,0.1);
@@ -73,18 +73,11 @@ body{
     object-fit:cover;
     display: block;
     margin-bottom: 10px;
+    border-radius: 15px;
     
 }
 .product-card:hover{
     transform: translateY(-10px);
-}
-
-.price{
-    display: block;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color:#1D4032;
-    font-size: 1.5rem;
 }
 
 .button-wrapper{
@@ -110,3 +103,4 @@ body{
     background-color: #2a5c48;
     transform: scale(1.05);
 }
+

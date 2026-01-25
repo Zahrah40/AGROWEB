@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #f5f5dc;
+    background-color: #d3dbb4;
     color: #1D4032;
 }
 
@@ -11,7 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#f5f5dc;
+    color:#d3dbb4;;
     font-size: xx-large;
     margin: 0;
 }
@@ -55,7 +55,7 @@ body{
 }
 
 .value-box{
-    background-color: #388e3c;
+    background-color: #7db980;
     padding: 25px;
     border-radius: 8px;
     text-align: center;
@@ -68,12 +68,7 @@ body{
     margin-bottom: 10px;
 }
 
-footer{
-    background-color: #5c2f04;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-}
+
 
 
 
