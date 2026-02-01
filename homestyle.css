@@ -54,31 +54,40 @@ body{
 
 .two-column-section{
     display: flex;
-    align-items:flex-start;
-    padding: 50px;
-    flex-wrap: wrap;
-    padding-top: 0;
+    align-items:center;
+    justify-content: flex-start;
+    padding-left: 80px;
+    height: 100vh;
 }
 
 .about-column-text{  /*make the text occupy about 70% of the screen. i.e. make the text wider*/
-    margin-right: 5%;
-    padding: 0px 10px;
-    padding-top: 30px;
-    font-size: xx-large;
-    width: 50%;
+  max-width: 600px;
+}
+
+.about-column-text h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-column-text p{
+    font-size: 1.5rem;
+    width: 70%;
+    text-align: left;
+    line-height: 1.4;
+    margin-left: 45px;
 }
 
 .about-column-image{ /*make the image bigger*/
-    padding: 0 30px;
-    width: 40%;
-    margin-top: 0;
-    padding-top: 0;
+   flex: 1;
+   display: flex;
+   justify-content: flex-end;
 }
 
 .about-column-image img{
     width: 100%;
     height: auto;
-    display: block;
+    max-width: 700px;
 }
 
 
