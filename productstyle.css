@@ -104,3 +104,33 @@ body{
     transform: scale(1.05);
 }
 
+.product-category{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px 20px 10px;
+    flex-wrap: wrap;
+    background-color: #f5f5dc;
+}
+
+.product-category button{
+    background-color: #f5f5dc;
+    color: #1D4032;
+    border: 2px solid #1D4032;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.product-category button:hover{
+    background-color: #1D4032;
+    color: #f5f5dc;
+    transform: translateY(-2px);
+}
+.product-category button.active {
+    background-color: #1D4032;
+    color: #f5f5dc;
+}

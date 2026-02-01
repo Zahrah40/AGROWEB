@@ -6,14 +6,76 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="productstyle.css" />
   </head>
+
   <body>
         <header class="page-header">
         <h1>OUR FRESH FARM PRODUCTS</h1>
         <p>Naturally Grown ● Freshly Harvested ● Safe Delivery</p>
         </header>
 
+        <div class="product-category">
+            <button onclick="filterProduct('all')">All</button>
+            <button onclick="filterProduct('vegetable')">Vegetables</button>
+            <button onclick="filterProduct('fruit')">Fruits</button>    
+            <button onclick="filterProduct('meat')">Meat</button>
+            <button onclick="filterProduct('seafood')">SeaFood</button>
+            <button onclick="filterProduct('dairy')">Dairy</button>
+        </div>
+
         <main class="product-container">
-            <div class="product-card">
+
+            <!--VEGETABLES-->
+            <div class="product-card" data-category="vegetable">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="Tomatoes" />
+                </div>
+                <h2>Tomatoes</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="vegetable">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="carrot" />
+                </div>
+                <h2>Carrot</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="vegetable">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="eggplant" />
+                </div>
+                <h2>Eggplant</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="vegetable">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="okra" />
+                </div>
+                <h2>Okra</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="vegetable">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="pepper" />
+                </div>
+                <h2>Pepper</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="vegetable">
                 <div class="image-wrapper">
                 <img src="Images/manwithpepper.jpeg" alt="Tomatoes" />
                 </div>
@@ -24,74 +86,20 @@
                 </div>
             </div>
 
-            <div class="product-card">
+            <!--FRUITS-->
+            <div class="product-card" data-category="fruit">
                 <div class="image-wrapper">
-                <img src="Images/manwithpepper.jpeg" alt="Eggplant" />
-                </div>
-                <h2>Eggplant</h2>
-                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
-                <div class="button-wrapper">
-                <button class="order-btn">ORDER NOW</button>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="image-wrapper">
-                <img src="Images/manwithpepper.jpeg" alt="okra" />
-                </div>
-                <h2>Okra</h2>
-                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
-                <div class="button-wrapper">
-                <button class="order-btn">ORDER NOW</button>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="image-wrapper">
-                <img src="" alt="cucumber" />
-                </div>
-                <h2>Cucumber</h2>
-                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
-                <div class="button-wrapper">
-                <button class="order-btn">ORDER NOW</button>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="image-wrapper">
-                <img src="" alt="watermelon" />
-                </div>
-                <h2>Watermelon</h2>
-                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
-                <div class="button-wrapper">
-                <button class="order-btn">ORDER NOW</button>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="image-wrapper">
-                <img src="" alt="banana" />
-                </div>
-                <h2>Banana</h2>
-                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
-                <div class="button-wrapper">
-                <button class="order-btn">ORDER NOW</button>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="image-wrapper">
-                <img src="Images/carrot.jpg" alt="apples" />
+                <img src="Images/manwithpepper.jpeg" alt="apple" />
                 </div>
                 <h2>Apple</h2>
-                <p>Naturally grown tomatoes harvested at peak ripeness.</p>        <div class="button-wrapper">
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
                 <button class="order-btn">ORDER NOW</button>
                 </div>
             </div>
-
-            <div class="product-card">
+            <div class="product-card" data-category="fruit">
                 <div class="image-wrapper">
-                <img src="Images/carrot.jpg" alt="orange" />
+                <img src="Images/manwithpepper.jpeg" alt="orange" />
                 </div>
                 <h2>Orange</h2>
                 <p>Naturally grown tomatoes harvested at peak ripeness.</p>
@@ -99,18 +107,167 @@
                 <button class="order-btn">ORDER NOW</button>
                 </div>
             </div>
-
-            <div class="product-card">
+            <div class="product-card" data-category="fruit">
                 <div class="image-wrapper">
-                <img src="Images/carrot.jpg" alt="carrot" />
+                <img src="Images/manwithpepper.jpeg" alt="banana" />
                 </div>
-                <h2>Carrot</h2>
+                <h2>Banana</h2>
                 <p>Naturally grown tomatoes harvested at peak ripeness.</p>
                 <div class="button-wrapper">
                 <button class="order-btn">ORDER NOW</button>
                 </div>
-
             </div>
+            <div class="product-card" data-category="fruit">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="watermelon" />
+                </div>
+                <h2>Watermelon</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="fruit">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="mango" />
+                </div>
+                <h2>Mango</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+
+            <!--MEAT-->
+            <div class="product-card" data-category="meat">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="chicken" />
+                </div>
+                <h2>Chicken</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="meat">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="turkey" />
+                </div>
+                <h2>Turkey</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="meat">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="beef" />
+                </div>
+                <h2>Beef</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="meat">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="goat meat" />
+                </div>
+                <h2>Goat Meat</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="meat">
+                <div class="image-wrapper">
+                <img src="Images/manwithpepper.jpeg" alt="meat" />
+                </div>
+                <h2>Meat</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+
+            <!--SEAFOOD-->
+            <div class="product-card" data-category="seafood">
+                <div class="image-wrapper">
+                <img src="" alt="fish" />
+                </div>
+                <h2>Fish</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="seafood">
+                <div class="image-wrapper">
+                <img src="" alt="crab" />
+                </div>
+                <h2>Crab</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="seafood">
+                <div class="image-wrapper">
+                <img src="" alt="shrimp" />
+                </div>
+                <h2>Shrimp</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+            
+
+            <!--DAIRY-->
+            <div class="product-card" data-category="dairy">
+                <div class="image-wrapper">
+                <img src="" alt="yoghurt" />
+                </div>
+                <h2>Yoghurt</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="dairy">
+                <div class="image-wrapper">
+                <img src="" alt="milk" />
+                </div>
+                <h2>Milk</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="dairy">
+                <div class="image-wrapper">
+                <img src="" alt="cream-dessert" />
+                </div>
+                <h2>Cream Dessert</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="dairy">
+                <div class="image-wrapper">
+                <img src="" alt="butter" />
+                </div>
+                <h2>Butter</h2>
+                <p>Naturally grown tomatoes harvested at peak ripeness.</p>
+                <div class="button-wrapper">
+                <button class="order-btn">ORDER NOW</button>
+                </div>
+            </div>
+
 
         </main>
 
