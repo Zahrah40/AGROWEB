@@ -22,3 +22,9 @@ SERVICES
 4. Conservation
 
 
+Djoliba Agro Business is committed to providing fresh, high-quality
+          farm products directly from trusted local farms. We focus on
+          sustainable farming practices that ensure healthy produce and
+          environmental responsibility. Our products are carefully harvested,
+          processed, and delivered to maintain freshness and safety.
+        </p>
