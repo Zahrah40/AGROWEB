@@ -1,0 +1,51 @@
+/*
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "gcc",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "windows-gcc-x64",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+} */
+
+
+
+The `git` command was not found because Git is either not installed or not added to your system PATH.
+
+## Solutions
+
+### 1. Install Git
+Download and install from: https://git-scm.com/download/windows
+
+### 2. Add Git to PATH
+After installation, add these to your system PATH:
+```
+C:\Program Files\Git\cmd
+C:\Program Files\Git\bin
+```
+
+**To add to PATH:**
+1. Press `Win + R`, type `sysdm.cpl`, press Enter
+2. Go to **Advanced** → **Environment Variables**
+3. Under **System variables**, select `Path` → **Edit**
+4. Add the paths above → **OK**
+
+### 3. Verify Installation
+Open a new terminal and run:
+```powershell
+git --version
+```
+
+---
+
+Would you like me to help install Git or add it to your PATH?
